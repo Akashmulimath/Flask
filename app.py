@@ -11,7 +11,7 @@ def index():
 
 @app.route('/greet', methods=['POST', 'GET'])
 def greeter():
-    flash("Hello " + str(request.form['name_input']) + ", great to see you!\n" "ಕರ್ನಾಟಕ ನಿಮ್ಮನ್ನು ಸ್ವಾಗತಿಸುತ್ತಿದೆ!")
+    flash("Hello " + str(request.form['name_input']) + ", great to see you!\n<br>ಕರ್ನಾಟಕ ನಿಮ್ಮನ್ನು ಸ್ವಾಗತಿಸುತ್ತಿದೆ!")
     return render_template("index.html")
 
 
